@@ -103,5 +103,5 @@ def finalize_order(chat):
     print(f"Район: {location}")
     print("------------------------\n")
     bot.send_message(chat, "✅ Замовлення оформлено!", reply_markup=main_menu())
-
-bot.infinity_polling()  
+if __name__ == "__main__":
+    bot.infinity_polling()  
